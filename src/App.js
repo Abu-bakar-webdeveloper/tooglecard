@@ -1,10 +1,15 @@
 import './App.css';
+import Login from './Comp/Login';
+import Profile from './Comp/Profile';
+import UserContextProvider from './Context/UserContextProvider';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
+    <UserContextProvider>
       toogle card project start
-    </h1>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
   );
 }
 
